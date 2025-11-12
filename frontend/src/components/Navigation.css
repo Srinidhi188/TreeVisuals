@@ -1,0 +1,27 @@
+/* src/components/Navigation.css */
+.app-nav {
+  margin-bottom: 25px;
+}
+
+.app-nav button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: var(--accent-blue); /* CHANGED */
+  background-color: var(--bg-secondary); /* CHANGED */
+  border: 2px solid var(--accent-blue); /* CHANGED */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.app-nav button:hover {
+  background-color: var(--bg-color); /* CHANGED */
+}
+
+.app-nav button.active {
+  /* This is the style for the selected button */
+  background-color: var(--accent-blue); /* CHANGED */
+  color: #ffffff;
+}

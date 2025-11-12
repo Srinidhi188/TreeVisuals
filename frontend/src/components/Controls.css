@@ -1,0 +1,74 @@
+/* src/components/Controls.css */
+
+.multi-controls-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.controls-group {
+  padding: 15px;
+  background-color: var(--bg-secondary); /* CHANGED */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow); /* CHANGED */
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.controls-group label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: var(--text-color); /* CHANGED */
+}
+
+.controls-group input {
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 2px solid var(--border-color); /* CHANGED */
+  background-color: var(--bg-color); /* CHANGED */
+  color: var(--text-color); /* CHANGED */
+  border-radius: 6px;
+  margin-right: 10px;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+.controls-group button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.controls-group button:active {
+  transform: scale(0.98);
+}
+
+/* --- Insert Button Styles (Blue) --- */
+.controls-group input:focus {
+  border-color: var(--accent-blue); /* CHANGED */
+  outline: none;
+}
+
+.insert-btn {
+  background-color: var(--accent-blue); /* CHANGED */
+}
+
+.insert-btn:hover {
+  background-color: var(--accent-blue-hover); /* CHANGED */
+}
+
+/* --- Delete Button Styles (Red) --- */
+.delete-btn {
+  background-color: var(--accent-red); /* CHANGED */
+}
+
+.delete-btn:hover {
+  background-color: var(--accent-red-hover); /* CHANGED */
+}

@@ -1,0 +1,76 @@
+/* src/index.css
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* src/index.css */
+
+/* 1. Define light theme colors (default) */
+:root {
+  --bg-color: #f4f7f6;
+  --bg-secondary: #ffffff;
+  --text-color: #333;
+  --text-heading: #2c3e50;
+  --border-color: #ddd;
+  --shadow: rgba(0, 0, 0, 0.05);
+
+  --accent-blue: #3498db;
+  --accent-blue-hover: #2980b9;
+  --accent-green: #27ae60;
+  --accent-green-hover: #2ecc71;
+  --accent-red: #e74c3c;
+  --accent-red-hover: #c0392b;
+}
+
+/* 2. Define dark theme colors (when body has .dark class) */
+body.dark {
+  --bg-color: #2c3e50;
+  --bg-secondary: #34495e;
+  --text-color: #ecf0f1;
+  --text-heading: #ffffff;
+  --border-color: #4a6572;
+  --shadow: rgba(0, 0, 0, 0.2);
+
+  --accent-blue: #3498db;
+  --accent-blue-hover: #5dade2;
+  --accent-green: #2ecc71;
+  --accent-green-hover: #58d68d;
+  --accent-red: #e74c3c;
+  --accent-red-hover: #f1948a;
+}
+
+/* 3. Apply the base styles using the variables */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Apply to all h1 headings */
+h1 {
+  color: var(--text-heading);
+  font-weight: 300;
+}

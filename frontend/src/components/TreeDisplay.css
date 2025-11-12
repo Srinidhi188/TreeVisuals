@@ -1,0 +1,20 @@
+/* 
+#tree-container {
+  width: 90vw; /* 90% of the viewport width 
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+} */
+
+/* src/components/TreeDisplay.css */
+#tree-container {
+  width: 90vw;
+  height: 600px;
+  border: 1px solid var(--border-color); /* CHANGED */
+  border-radius: 8px;
+  background-color: var(--bg-secondary); /* CHANGED */
+  box-shadow: 0 4px 12px var(--shadow); /* CHANGED */
+  transition: background-color 0.3s, border-color 0.3s;
+}
