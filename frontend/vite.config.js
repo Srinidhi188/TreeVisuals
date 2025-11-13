@@ -4,13 +4,17 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-
+  
   // Add this 'preview' section
   preview: {
-    port: process.env.PORT, // Use the $PORT variable from Railway
-    host: '0.0.0.0',       // Listen on all addresses
+    port: process.env.PORT,
+    host: '0.0.0.0',
     allowedHosts: [
-      'treevisuals-production.up.railway.app' // Add your Railway URL here
+      // Your new Frontend URL
+      'easygoing-enchantment-copy-production.up.railway.app', 
+      
+      // Your Backend URL
+      'easygoing-enchantment-production-3a1f.up.railway.app'
     ]
   }
 })

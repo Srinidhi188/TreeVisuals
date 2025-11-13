@@ -9,12 +9,12 @@ import HeapDisplay from './components/HeapDisplay';
 import ThemeToggle from './components/ThemeToggle'; // 1. Import the toggle
 
 // // API URLs for our Java backend
-// const BST_API_URL = 'http://localhost:8080/api/tree';
-// const HEAP_API_URL = 'http://localhost:8080/api/heap';
+const BST_API_URL = 'http://localhost:8080/api/tree';
+const HEAP_API_URL = 'http://localhost:8080/api/heap';
 // API URLs
-const BASE_API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
-const BST_API_URL = `${BASE_API_URL}/api/tree`;
-const HEAP_API_URL = `${BASE_API_URL}/api/heap`;
+// const BASE_API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+// const BST_API_URL = `${BASE_API_URL}/api/tree`;
+// const HEAP_API_URL = `${BASE_API_URL}/api/heap`;
 function App() {
   const [mode, setMode] = useState('bst');
   const [treeData, setTreeData] = useState(null);
