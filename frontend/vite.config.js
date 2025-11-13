@@ -10,8 +10,8 @@ export default defineConfig({
     port: process.env.PORT,
     host: '0.0.0.0',
     allowedHosts: [
-      // Your new Frontend URL
-      'easygoing-enchantment-copy-production.up.railway.app', 
+      // Your NEW Frontend URL (from the error)
+      'treevisuals-production.up.railway.app', 
       
       // Your Backend URL
       'easygoing-enchantment-production-3a1f.up.railway.app'

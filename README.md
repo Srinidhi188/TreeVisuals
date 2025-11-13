@@ -1,5 +1,5 @@
 # 🌳 TreeVisuals: A Full-Stack DSA Visualizer
-<<<<<<< HEAD
+
 ## 🚀 Live Demo
 
 **[Click here to view the live application](https://treevisuals-production.up.railway.app)**
